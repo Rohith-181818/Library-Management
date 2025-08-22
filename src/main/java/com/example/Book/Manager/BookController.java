@@ -27,6 +27,7 @@ public class BookController {
     @GetMapping("/book/{bookId}")
 
     public Book getBookById(@PathVariable("bookId") int bookId){
+        log.warn("Warning...!?");
         return bookService.getBookById(bookId);
     }
 
