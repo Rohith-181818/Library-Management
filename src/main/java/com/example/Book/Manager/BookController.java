@@ -34,6 +34,7 @@ public class BookController {
     @PostMapping("/book")
 
     public Book addBook(@RequestBody Book book){
+        log.debug("Debugging...!");
         return bookService.addBook(book);
     }
 
